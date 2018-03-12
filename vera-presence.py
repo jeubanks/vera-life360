@@ -6,9 +6,9 @@ Requirements:
  - People setup in Life360
  - "Home" Geofence location defined in Life360
 
-Setup:
-Line 28: Life360 Username/email/phone number
-Line 29: Life360 password
+Setup: (I'll have to change the docs on this as it keeps updating)
+Line 54: Life360 Username/email/phone number
+Line 55: Life360 password
 
 By default the Vera virtual switch name is the first name of the Life360 user.
 

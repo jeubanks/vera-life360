@@ -79,9 +79,16 @@ if __name__ == "__main__":
             place = str (m['location']['name'])
             
             dev = ve.get_device(firstname)
+            cState = dev.get_vswitch()
             if place == "Home":
-                dev.set_vswitch(True)
+                if cState == True:
+                    pass
+                else:
+                    dev.set_vswitch(True)
             else:
-                dev.set_vswitch(False)
+                if cState == False:
+                    pass
+                else:
+                    dev.set_vswitch(False)
     else:
         print("Error authenticating")  

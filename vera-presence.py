@@ -78,7 +78,8 @@ if __name__ == "__main__":
             firstname = str (m['firstName'])
             place = str (m['location']['name'])
             
-            dev = ve.get_device(firstname)
+            life360_dev = firstname.split()[0]
+            dev = ve.get_device(life360_dev)
             cState = dev.get_vswitch()
             if place == "Home":
                 if cState == True:
